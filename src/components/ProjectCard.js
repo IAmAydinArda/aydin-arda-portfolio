@@ -83,7 +83,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
           <div className='flex flex-col min-[640px]:flex-row w-full gap-3 sm:gap-4 md:gap-6' >
             {/* Image Container with Aspect Ratio */}
             <div className='w-full min-[640px]:w-48 lg:w-56 xl:w-64 flex-shrink-0'>
-              <div className='aspect-[664/576] bg-[#131313] dark:bg-gray-800 rounded-[8px] md:rounded-[12px] overflow-hidden group-hover:shadow-md transition-shadow duration-300'>
+              <div className='aspect-[664/576] bg-gray-500 dark:bg-gray-800 rounded-[8px] md:rounded-[12px] overflow-hidden group-hover:shadow-md transition-shadow duration-300'>
                 <img 
                   src={imgURL} 
                   alt={alt} 

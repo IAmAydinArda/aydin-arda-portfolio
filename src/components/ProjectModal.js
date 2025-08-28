@@ -64,7 +64,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
         <div className="p-6">
           {/* Project Image */}
           <div className="mb-8">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+            <div className="bg-gray-400 dark:bg-gray-800 rounded-lg overflow-hidden">
               <img 
                 src={project.imgURL} 
                 alt={project.alt} 
