@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 import Skills from "../components/Skills";
 import personalData from "../config/personalData";
@@ -214,14 +213,14 @@ export default function Home() {
         </section>
 
         {/* Show All Projects Button */}
-        <div className="flex justify-center mb-20">
+        {/* <div className="flex justify-center mb-20">
           <Link
             to="/projects"
             className="px-8 py-3 bg-gray-800 text-white rounded-full font-medium hover:bg-gray-700 transition-colors duration-200 shadow-md"
           >
             View All Projects
           </Link>
-        </div>
+        </div> */}
 
         <Skills />
       </main>
