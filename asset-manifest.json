@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12b43876.css",
+    "main.js": "/static/js/main.29d3dfe9.js",
+    "static/js/309.fa7fc3aa.chunk.js": "/static/js/309.fa7fc3aa.chunk.js",
+    "static/js/91.644e1966.chunk.js": "/static/js/91.644e1966.chunk.js",
+    "static/media/techfi-landing.png": "/static/media/techfi-landing.d79b624078b905eb165f.png",
+    "static/media/techfi-services.png": "/static/media/techfi-services.791fd272b041f52bded5.png",
+    "static/media/youtubeanalyzer-landing.png": "/static/media/youtubeanalyzer-landing.ad438ecc4f094be85125.png",
+    "static/media/techfi-pricing.png": "/static/media/techfi-pricing.81faf1f165ad8358b107.png",
+    "static/media/youtubeanalyzer-logo.jpg": "/static/media/youtubeanalyzer-logo.2f427bfd85af9ac1bd4b.jpg",
+    "static/media/techfi-design.png": "/static/media/techfi-design.a345ae897cc71aebc15d.png",
+    "static/media/youtubeanalyzer-tumbnail.png": "/static/media/youtubeanalyzer-tumbnail.415c8fe97a4a2714106b.png",
+    "static/media/not-found.png": "/static/media/not-found.ee6dd87bcf76c1bb31c2.png",
+    "static/media/techfi-logo.svg": "/static/media/techfi-logo.87c880ff3093a66e4733959ccba097d0.svg",
+    "static/media/profile-image.png": "/static/media/profile-image.ab99317bdcf90408be88.png",
+    "static/media/youtubeanalyzer-extension.png": "/static/media/youtubeanalyzer-extension.e5b398adbd2580c1df69.png",
+    "static/media/nyata.woff": "/static/media/nyata.f3bbe423658d0233243b.woff",
+    "static/media/nyata.woff2": "/static/media/nyata.78c6d676777e7a42d1df.woff2",
+    "static/media/color_palette.png": "/static/media/color_palette.22be4a87b5430f963ac5.png",
+    "index.html": "/index.html",
+    "static/media/github-icon.svg": "/static/media/github-icon.3b21c250a99986431958daaa9246a45a.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.98956d298e14a6384fdb39c42269f2f2.svg",
+    "static/media/email-icon.svg": "/static/media/email-icon.4aea3fadcfd66083c2d347aa47928751.svg",
+    "main.12b43876.css.map": "/static/css/main.12b43876.css.map",
+    "main.29d3dfe9.js.map": "/static/js/main.29d3dfe9.js.map",
+    "309.fa7fc3aa.chunk.js.map": "/static/js/309.fa7fc3aa.chunk.js.map",
+    "91.644e1966.chunk.js.map": "/static/js/91.644e1966.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12b43876.css",
+    "static/js/main.29d3dfe9.js"
+  ]
+}

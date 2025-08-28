@@ -1,0 +1,15 @@
+{
+  "short_name": "ardayalin.com",
+  "name": "Arda's portfolio website",
+  "icons": [
+    {
+      "src": "%PUBLIC_URL%/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
