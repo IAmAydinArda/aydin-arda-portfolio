@@ -78,12 +78,13 @@ const skillIcons = {
 
 export default function Skills() {
   const { theme, skills } = personalData;
+  const textPrimary = `text-${theme.colors.text}`;
 
   return (
     <section className="flex flex-col w-full px-2 justify-center mt-12 mb-24">
       <div className="lg:w-4/5 mx-auto max-w-5xl">
         <h2
-          className={`${theme.fonts.body} text-4xl font-bold text-center mx-auto text-gray-800 dark:text-gray-200 mb-4`}
+          className={`${theme.fonts.body} text-4xl font-bold text-center mx-auto ${textPrimary} dark:text-gray-200 mb-4`}
         >
           {skills.title}
         </h2>
@@ -97,7 +98,7 @@ export default function Skills() {
           {skills.categories.map((category) => (
             <div key={category.name}>
               <h3
-                className={`${theme.fonts.body} text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-3`}
+                className={`${theme.fonts.body} text-2xl font-semibold ${textPrimary} dark:text-gray-300 mb-3`}
               >
                 {category.name}
               </h3>

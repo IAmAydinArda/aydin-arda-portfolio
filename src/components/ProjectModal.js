@@ -2,10 +2,69 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import Button from './Button';
 import personalData from '../config/personalData';
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiFigma,
+  SiAngular,
+  SiPython,
+  SiAmazonaws,
+  SiGraphql,
+  SiGatsby,
+  SiOpenai,
+  SiGooglechrome,
+  SiPostgresql,
+  SiStripe,
+  SiGoogle,
+  SiSendinblue,
+  SiDocker,
+  SiGithubactions,
+  SiFlask,
+} from 'react-icons/si';
 
 export default function ProjectModal({ project, isOpen, onClose }) {
   const { theme } = personalData;
   const [selectedImage, setSelectedImage] = useState(null);
+  const techIcons = {
+    'React': <SiReact className="text-[#61DAFB]" />,
+    'Next.js': <SiNextdotjs className="text-[#000000] dark:text-[#FFFFFF]" />,
+    'Tailwind CSS': <SiTailwindcss className="text-[#06B6D4]" />,
+    'Javascript': <SiJavascript className="text-[#F7DF1E]" />,
+    'Typescript': <SiTypescript className="text-[#3178C6]" />,
+    'TypeScript': <SiTypescript className="text-[#3178C6]" />,
+    'Node.js': <SiNodedotjs className="text-[#339933]" />,
+    'Node.js / Express': (
+      <span className="flex items-center gap-1">
+        <SiNodedotjs className="text-[#339933]" />
+        <SiExpress className="text-[#000000] dark:text-[#FFFFFF]" />
+      </span>
+    ),
+    'Express': <SiExpress className="text-[#000000] dark:text-[#FFFFFF]" />,
+    'Figma': <SiFigma className="text-[#F24E1E]" />,
+    'Angular': <SiAngular className="text-[#DD0031]" />,
+    'Python': <SiPython className="text-[#3776AB]" />,
+    'Python Flask': <SiFlask className="text-[#000000] dark:text-[#FFFFFF]" />,
+    'Amazon AWS': <SiAmazonaws className="text-[#232F3E]" />,
+    'AWS Lambda': <SiAmazonaws className="text-[#FF9900]" />,
+    'AWS S3': <SiAmazonaws className="text-[#569A31]" />,
+    'CloudFront': <SiAmazonaws className="text-[#FF9900]" />,
+    'GraphQL': <SiGraphql className="text-[#E10098]" />,
+    'Gatsby': <SiGatsby className="text-[#639]" />,
+    'Gatsby.js': <SiGatsby className="text-[#639]" />,
+    'OpenAI API': <SiOpenai className="text-[#000000] dark:text-[#FFFFFF]" />,
+    'Chrome Extension API': <SiGooglechrome className="text-[#4285F4]" />,
+    'PostgreSQL': <SiPostgresql className="text-[#336791]" />,
+    'Stripe API': <SiStripe className="text-[#635BFF]" />,
+    'Google SSO': <SiGoogle className="text-[#4285F4]" />,
+    'SendGrid': <SiSendinblue className="text-[#1A82E2]" />,
+    'Docker': <SiDocker className="text-[#2496ED]" />,
+    'GitHub Actions': <SiGithubactions className="text-[#2088FF]" />,
+  }
 
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -110,18 +169,23 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               )}
 
               {/* Technologies Used */}
-              {project.details.technologies && (
+              {Array.isArray(project.details.technologies) && project.details.technologies.length > 0 && (
                 <div>
                   <h3 className={`${theme.fonts.heading} text-lg font-medium text-gray-900 dark:text-gray-100 mb-3`}>
                     Technologies Used
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {project.details.technologies.map((tech, index) => (
+                    {project.details.technologies.map((techName, index) => (
                       <span 
                         key={index}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm"
+                        className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm"
                       >
-                        {tech}
+                        <span className="text-base">
+                          {techIcons[techName] || techIcons[techName?.replace(' / ', ' ')] || null}
+                        </span>
+                        <span className={theme.fonts.body}>
+                          {techName}
+                        </span>
                       </span>
                     ))}
                   </div>

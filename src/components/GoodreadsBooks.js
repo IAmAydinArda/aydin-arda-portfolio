@@ -7,7 +7,7 @@ const BookCard = ({ book, index, theme }) => {
     return Array.from({ length: 5 }, (_, i) => (
       <span
         key={i}
-        className={`text-xs ${i < rating ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-600'}`}
+        className={`text-xs ${i < rating ? 'text-purple-400' : 'text-gray-300 dark:text-gray-600'}`}
       >
         ★
       </span>
@@ -42,7 +42,7 @@ const BookCard = ({ book, index, theme }) => {
 
   return (
     <article
-      className="mx-auto w-full max-w-4xl group hover:shadow-xl hover:border-yellow-400 hover:bg-gray-50 dark:hover:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 sm:p-4 md:p-5 rounded-[12px] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className="mx-auto w-full max-w-4xl group hover:shadow-xl hover:border-purple-400 hover:bg-gray-50 dark:hover:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-3 sm:p-4 md:p-5 rounded-[12px] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className='flex flex-row w-full gap-2 sm:gap-3 md:gap-4'>
@@ -68,7 +68,7 @@ const BookCard = ({ book, index, theme }) => {
           <div className='flex flex-col gap-0.5 sm:gap-1'>
             {/* Title and Shelf */}
             <div className="flex items-start justify-between gap-2">
-              <h3 className={`${theme.fonts.heading} text-sm sm:text-base md:text-lg font-medium text-gray-900 dark:text-gray-100 group-hover:text-yellow-500 transition-colors duration-300 line-clamp-2 flex-1`}>
+              <h3 className={`${theme.fonts.heading} text-sm sm:text-base md:text-lg font-medium text-gray-900 dark:text-gray-100 group-hover:text-purple-500 transition-colors duration-300 line-clamp-2 flex-1`}>
                 {book.title}
               </h3>
               {/* Shelf Badge */}

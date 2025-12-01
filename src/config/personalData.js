@@ -38,13 +38,13 @@ const personalData = {
   theme: {
     colors: {
       primary: "gray-800",
-      secondary: "yellow-400",
-      accent: "yellow-500",
+      secondary: "purple-400",
+      accent: "purple-500",
       background: "gray-50",
       text: "gray-900",
-      button: "yellow-400",
+      button: "purple-400",
       buttonText: "white",
-      buttonHover: "yellow-500",
+      buttonHover: "purple-500",
       buttonTextHover: "white",
     },
     fonts: {
@@ -153,7 +153,7 @@ const personalData = {
         alt: "Youtube Analyzer extension image",
         title: "Youtube Analyzer - Video Summarizer",
         desc: "Don't have time to watch the whole video, let Youtube Analyzer summarize it for you.",
-        subtitles: ["React", "Typescript", "Product Design"],
+        subtitles: ["React", "Typescript", "Product Design", "OpenAI API"],
         category: "personal",
         websiteLink: "https://youtubeanalyzer.tech",
         appLink: "https://chrome.google.com/webstore/detail/youtube-analyzer/oefncahpjhmbhahohenajofmeleahjen",

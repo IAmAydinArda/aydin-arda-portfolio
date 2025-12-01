@@ -79,7 +79,7 @@ const ArticleCard = ({ article }) => {
 
         {/* Content */}
         <div className="mb-4">
-          <h3 className={`${theme.fonts.heading} text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-yellow-500 transition-colors duration-200`}>
+          <h3 className={`${theme.fonts.heading} text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-purple-500 transition-colors duration-200`}>
             {article.title}
           </h3>
           <p className={`${theme.fonts.body} text-gray-700 dark:text-gray-300 leading-relaxed`}>

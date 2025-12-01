@@ -44,12 +44,17 @@ export default function Home() {
     };
   }, []);
 
+  // Derive commonly used themed classes from the theme config
+  const textPrimary = `text-${theme.colors.text}`;
+  const buttonBg = `bg-${theme.colors.button}`;
+  const buttonBgHover = `hopurpbe-${theme.colors.buttonHover}`;
+
   return (
     <>
       <main className="flex flex-col">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-yellow-400 text-black px-4 py-2 rounded-md z-50"
+          className={`sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 ${buttonBg} text-black px-4 py-2 rounded-md z-50 ${buttonBgHover}`}
         >
           Skip to main content
         </a>
@@ -67,12 +72,12 @@ export default function Home() {
             />
           </div>
           <h1
-            className={`${theme.fonts.heading} text-center font-medium text-6xl text-gray-900 dark:text-gray-100 mb-4`}
+            className={`${theme.fonts.heading} text-center font-medium text-6xl ${textPrimary} dark:text-gray-100 mb-4`}
           >
             {name}
           </h1>
           <h2
-            className={`${theme.fonts.body} text-2xl lg:w-3/4 mx-auto text-center text-gray-900 dark:text-gray-100 mb-2`}
+            className={`${theme.fonts.body} text-2xl lg:w-3/4 mx-auto text-center ${textPrimary} dark:text-gray-100 mb-2`}
           >
             {title}
           </h2>
@@ -150,12 +155,22 @@ export default function Home() {
                 </div>
               </div>
             )}
-            <a href="https://github.com/IAmAydinArda" className={streakLoaded ? '' : 'hidden'}>
+            <a
+              href="https://github.com/IAmAydinArda"
+              className={streakLoaded ? "" : "hidden"}
+            >
               <img
-                src={`https://github-readme-streak-stats-chi-amber.vercel.app/?user=IAmAydinArda&hide_border=true&${isDarkMode ? '&theme=ocean-dark&fire=EB5454&dates=FFFFFF&background=00000000' : ''}`}
+                src={`https://github-readme-streak-stats-navy-ten-20.vercel.app?user=IAmAydinArda&hide_border=true${
+                  isDarkMode
+                    ? "&theme=ocean-dark&fire=EB5454&dates=FFFFFF&background=00000000"
+                    : ""
+                }`}
                 alt="GitHub Streak"
                 onLoad={() => setStreakLoaded(true)}
-                onError={() => setStreakLoaded(true)}
+                onError={() => {
+                  console.error("Failed to load GitHub streak image");
+                  setStreakLoaded(true);
+                }}
               />
             </a>
           </div>

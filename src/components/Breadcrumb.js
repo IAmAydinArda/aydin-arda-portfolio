@@ -13,7 +13,7 @@ export default function Breadcrumb({ items }) {
           {item.href ? (
             <Link
               to={item.href}
-              className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors duration-200"
+              className="hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200"
             >
               {item.label}
             </Link>

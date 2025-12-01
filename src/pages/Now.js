@@ -16,8 +16,8 @@ export default function Now() {
           <a 
             href="https://nownownow.com/" 
             target="_blank" 
-            rel="noopener noreferrer"
-            className="text-yellow-500 hover:text-yellow-600 underline transition-colors duration-200"
+              rel="noopener noreferrer"
+              className="text-purple-500 hover:text-purple-600 underline transition-colors duration-200"
           >
             now page
           </a>
@@ -88,7 +88,7 @@ export default function Now() {
             href="https://sivers.org/nowff" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-yellow-500 hover:text-yellow-600 underline transition-colors duration-200"
+            className="text-purple-500 hover:text-purple-600 underline transition-colors duration-200"
           >
             Derek Sivers
           </a>
@@ -97,7 +97,7 @@ export default function Now() {
             href="https://nownownow.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-yellow-500 hover:text-yellow-600 underline transition-colors duration-200"
+            className="text-purple-500 hover:text-purple-600 underline transition-colors duration-200"
           >
             other now pages
           </a>

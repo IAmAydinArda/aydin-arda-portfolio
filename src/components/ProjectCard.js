@@ -22,9 +22,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
     'Next.js': <SiNextdotjs className="text-[#000000] dark:text-[#FFFFFF]" />,
     'Tailwind CSS': <SiTailwindcss className="text-[#06B6D4]" />,
     'Javascript': <SiJavascript className="text-[#F7DF1E]" />,
-    'JavaScript': <SiJavascript className="text-[#F7DF1E]" />,
     'Typescript': <SiTypescript className="text-[#3178C6]" />,
-    'TypeScript': <SiTypescript className="text-[#3178C6]" />,
     'Node.js': <SiNodedotjs className="text-[#339933]" />,
     'Express.js': <SiExpress className="text-[#000000] dark:text-[#FFFFFF]" />,
     'Angular': <SiAngular className="text-[#DD0031]" />,
@@ -71,7 +69,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
   return (
     <>
       <article
-        className={`mx-auto w-full max-w-sm sm:max-w-md min-[640px]:max-w-4xl group hover:shadow-xl hover:border-yellow-400 hover:bg-gray-50 dark:hover:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 rounded-[16px] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg`}
+        className={`mx-auto w-full max-w-sm sm:max-w-md min-[640px]:max-w-4xl group hover:shadow-xl hover:border-purple-400 hover:bg-gray-50 dark:hover:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-6 rounded-[16px] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg`}
         style={{ animationDelay: `${index * 0.1}s` }}
       >
         <button
@@ -96,7 +94,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
             <div className='flex flex-col flex-1 justify-between min-w-0'>
               <div className='flex flex-col gap-1 sm:gap-2 md:gap-3'>
                 {/* Title - Below image on small screens, next to image on larger screens */}
-                <h2 className={`${theme.fonts.heading} block text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-900 dark:text-gray-100 group-hover:text-yellow-500 transition-colors duration-300 line-clamp-2`}>
+                <h2 className={`${theme.fonts.heading} block text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-900 dark:text-gray-100 group-hover:text-purple-500 transition-colors duration-300 line-clamp-2`}>
                   {title}
                 </h2>
                 
