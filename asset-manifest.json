@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc5f74c4.css",
-    "main.js": "/static/js/main.763abb41.js",
-    "static/js/309.fa7fc3aa.chunk.js": "/static/js/309.fa7fc3aa.chunk.js",
-    "static/js/91.644e1966.chunk.js": "/static/js/91.644e1966.chunk.js",
+    "main.css": "/static/css/main.105ee8b7.css",
+    "main.js": "/static/js/main.466cc25a.js",
+    "static/js/309.391116f3.chunk.js": "/static/js/309.391116f3.chunk.js",
+    "static/js/91.e529a356.chunk.js": "/static/js/91.e529a356.chunk.js",
     "static/media/techfi-landing.png": "/static/media/techfi-landing.d79b624078b905eb165f.png",
     "static/media/techfi-services.png": "/static/media/techfi-services.791fd272b041f52bded5.png",
     "static/media/youtubeanalyzer-landing.png": "/static/media/youtubeanalyzer-landing.ad438ecc4f094be85125.png",
@@ -22,13 +22,13 @@
     "static/media/github-icon.svg": "/static/media/github-icon.3b21c250a99986431958daaa9246a45a.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.98956d298e14a6384fdb39c42269f2f2.svg",
     "static/media/email-icon.svg": "/static/media/email-icon.cccc3f918582fda2b626471aae0bf7d4.svg",
-    "main.cc5f74c4.css.map": "/static/css/main.cc5f74c4.css.map",
-    "main.763abb41.js.map": "/static/js/main.763abb41.js.map",
-    "309.fa7fc3aa.chunk.js.map": "/static/js/309.fa7fc3aa.chunk.js.map",
-    "91.644e1966.chunk.js.map": "/static/js/91.644e1966.chunk.js.map"
+    "main.105ee8b7.css.map": "/static/css/main.105ee8b7.css.map",
+    "main.466cc25a.js.map": "/static/js/main.466cc25a.js.map",
+    "309.391116f3.chunk.js.map": "/static/js/309.391116f3.chunk.js.map",
+    "91.e529a356.chunk.js.map": "/static/js/91.e529a356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc5f74c4.css",
-    "static/js/main.763abb41.js"
+    "static/css/main.105ee8b7.css",
+    "static/js/main.466cc25a.js"
   ]
 }
